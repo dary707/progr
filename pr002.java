@@ -60,5 +60,43 @@ class pr002 {
                 bool = ch=='я';
                 if(bool)
                 System.out.println("Символ ch равен \"я\"");  
+
+		// Логические операции над переменными 
+		System.out.println("\n");
+		boolean p, q;
+		System.out.println("P\tQ\tAND\tOR\tHOR\tNOT");
+		p = true; q = true;
+		System.out.println(p +"\t" + q = "\t");
+		System.out.println(p&q)  + "\t" +(p|q) +"\t);"
+		Systen.out.println((p^q) + "\t" + (!p));
+	       	
+		p = true; q = false; 
+		System.out.println(p + "\t" + q "\t");
+		System.out.println((p&q) + "\t" + (p|q) + "\t);
+		System.out.println((p^q) + "\t" + (!p));
+
+		p = true; q = false;
+                System.out.println(p + "\t" + q "\t");
+                System.out.println((p&q) + "\t" + (p|q) + "\t);
+                System.out.println((p^q) + "\t" + (!p));
+
+		p = true; q = false;
+                System.out.println(p + "\t" + q "\t");
+                System.out.println((p&q) + "\t" + (p|q) + "\t);
+                System.out.println((p^q) + "\t" + (!p));
+
+		//Пример неожиданного повышения типов данных 
+		System.out.println.("\n");
+		byte b11;
+		int i11;
+		b11 = 10;
+		i11 = b11 * b11; //При операции перемножения двух переменных типов byte получаем int
+		
+		b11 = 10
+		b11 = (byte)(b11 * b11); //Необходимо приведение типа int к типу byte
+		System.out.println("i11 и b11: " + i11 + " " + b11);	
+ 
+
+
 	}
 }
