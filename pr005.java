@@ -34,10 +34,10 @@ class Arrays {
 		//Инициализация массива 
 		System.out.println();
 		int[]sample2 = {87, 100, -42, 34, 25, -25, -424, 62, 74, 8};
-		min = max = sample1[0];
+		min = max = sample2[0];
                 for (i = 1; i < 10; i++) {
-                        if (sample1[i] < min) min = sample1[i];
-                        if (sample1[i] >max) max = sample1[i];
+                        if (sample2[i] < min) min = sample2[i];
+                        if (sample2[i] > max) max = sample2[i];
                 }
                 System.out.println("Минимальное и максимальное значение: " + min + " " + max);
 	}
