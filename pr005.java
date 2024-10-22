@@ -180,7 +180,6 @@ class Arrays {
 		System.out.println("Сумма: " + summ);
 		if(found)
 			System.out.println("Значение найдено")
-		
 		//Работа со строками 
 		System.out.println();
 		String str1 = new String(“СтрокаAC ”);
