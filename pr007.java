@@ -63,4 +63,24 @@ class FailSoftArray {
         }
 }
 
+//Класс для вызова метода с передачей параметров по значению 
+class CellByValue {
+        void noChange(int i11, int j11) {
+                i11 = i11 + j11;
+                j11 = -j11;
+        }
+}
+
+//Класс для вызова метода с передачей параметров по ссылке 
+class CallByRef {
+        int a12, b12;
+        CallByRef (int i12, int j12) {
+                a12 = j12;
+                b12 = j12;
+        }
+        void change(CallByRef ob5) {
+                ob5.a12 = ob.a12 + ob5.b12;
+                ob5.b12 = -ob5.b12;
+        }
+}
                  
