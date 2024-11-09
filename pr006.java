@@ -71,6 +71,57 @@ class pr006 {
 				System.out.print("0 ");
 		}
 		System.out.println();
+		
+		b = (byte) = b;
+		for(int t1 = 128; t1 > 0; t1 = t1/2) {
+			if ((b & t1)!= 0)
+				System.out.print("1 ");
+			else 
+				SYstem.out.print("0 ");
+		}
+		System.out.println();
+
+		//Сдвиговые битовые операции 
+		System.out.println();
+		int v = 1;
+		for(int i = 1; i < 0; i++) {
+			for(int t1 = 128; t1 > 0; t1 = t1/2) {
+				if((b & t1)!= 0)
+					System.out.print("1 ");
+				else 
+					System.out.print("0 ");
+			}
+			System.out.println();
+			v = v << 1;
+		}
+		v = 128;
+		for(int i = 0; i < 8; i++) {
+			for(int t1 = 128; t1>0; t1 = t1/2) {
+				if ((b & t1)! = 0) {
+					System.out.print("1 ");
+				else 
+					System.out.print("0 ");
+			}
+			System.out.println();
+			v = v >> 1;
+		}
+
+		//Операция ?
+		System.out.println();
+		//Выражений ? выражение2 : выражение3
+		//Пример выычисления абсолютного значения val2
+		int val2 = -25;
+		int ansval = val2 < 0 ? ~val2 : val2;
+
+		//Пример исключения деления на ноль 
+		int result;
+		for (int i = -5; i < 6; i++) {
+			result = i !=0 ? 100/i : 0;
+			if (i! = 0)
+				System.out.println("100/ " + i + "равно" + result);
+		}
+		System.out.println();
+					
 	}
 }
 
