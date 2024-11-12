@@ -16,7 +16,7 @@ class Factorial {
 	}
 }
 
-//статические переменные 
+//Статические переменные 
 class StaticDemo {
 	int x;
 	static int y;
@@ -25,6 +25,19 @@ class StaticDemo {
 		return x + y;
 	}
 }
+class StaticBlock {
+	static double rootOf2;
+	static double rootOf3;
+	static {
+		System.out.println("Внутри статического блока");
+		rootOf2 = Math.sqrt(2.0);
+		rootOf3 = Math.sqrt(3.0);
+	}
+	StaticBlock(String msg) {
+		System.out.println(msg);
+	}
+}
+
 class pr008 {
 	public static void main(String[] args) {
 		Factorial f = new Factorial();
@@ -59,6 +72,13 @@ class pr008 {
 
 	System.out.println("ob1.sum():" + ob1.sum());
 	System.out.println("ob2.sum():" + ob2.sum());
-	}
-	
+		
+	//Демонстрация работы статического блока 
+	System.out.println();
+	StaticBlock ob = new StaticBlock("Внутри конструктора");
+
+	System.out.println("Квадратный корень из 2: " + StaticBlock.rootOf2);
+	System.out.println("Квадратный корень из 3: " + StaticBlock.rootOf3);
+	}	
 }
+
