@@ -4,7 +4,7 @@ class Factorial {
 		int result;
 
 		if(n==1) return 1;
-		result = factR(n-1) = n;
+		result = factR(n-1) * n;
 		return result;
 	}
 	int factI(int n) {
@@ -42,5 +42,23 @@ class pr008 {
 	System.out.println("Факториал 4 равен " + f.factI(4));
 	System.out.println("Факториал 5 равен " + f.factI(5));
 	
-	}	
+	//Демонстарция использования статической переменной 
+	StaticDemo ob1 = new StaticDemo();
+	StaticDemo ob2 = new StaticDemo();
+
+	ob1.x = 10;
+	ob2.x = 20;
+
+	System.out.println("ob1.x и  ob2.x независимы друг от друга");
+	System.out.println("ob1.x: " + ob1.x + "\nob2.x" + ob2.x);
+
+	System.out.println();
+	System.out.println("Статическаяпеременная y является общей");
+	StaticDemo.y = 19;
+	System.out.println("Для y = 19");
+
+	System.out.println("ob1.sum():" + ob1.sum());
+	System.out.println("ob2.sum():" + ob2.sum());
+	}
+	
 }
