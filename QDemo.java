@@ -59,9 +59,40 @@ class QDemo {
 		System.out.print("Содержимое smallQ: ");
 		for(i = 0; i < 5; i++) {
 			ch = smallQ.get();
-			if(ch != (char) 0) System.out.print(ch);
+			if(ch != (char) 0) 
+				System.out.print(ch);
 		}
+		//bigq.q[3] = 'E'; Попытка измненеия значения у закрытой переменной класса Queue
+		//bigq.putloc = 50; Попытка изменения закрытого указателя в классе Queue
 
+		Queue q1 = new Queue(10);
+		char[] name = {'I','v','a','n'};
 
+		Queue q2 = new Queue(name);
+		//char ch;
+		System.out.println();
+		int i2;
+		for(i2=0; i2<10;i2++)
+			q1.put((char) ('A' + i2));
+		Queue q3 = new Queue(q1);
+
+		System.out.print("Содержимое q1: ");
+		for(i2 = 0; i2<10; i2++) {
+			ch = q1.get();
+			System.out.print(ch);
+		}
+		System.out.println("\n");
+		System.out.print("Содержимое q2 (на базе массива): ");
+		for(i2 = 0; i2<4; i2++) {
+			ch = q2.get();
+			System.out.print(ch);
+		}
+		System.out.println("\n");
+		System.out.print("Содержимое q3 (на базе очереди q1): ");
+		for(i2 = 0; i2<10; i2++) {
+			ch = q3.get();
+			System.out.print(ch);
+		}
+		System.out.println("\n");
 	}
 }
