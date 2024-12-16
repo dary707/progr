@@ -12,7 +12,7 @@ class LSP extends Music {
 
 class BTS extends Music {
 	public void performer() {
-		System.out.println("Performer Lady Gaga");
+		System.out.println("Performer BTS");
 	}
 }
 
